@@ -1,4 +1,5 @@
-/* -------------- CSS Reset -------------- */
+/* ======== CSS Reset ======== */
+
 *,
 *::before,
 *::after{
@@ -15,12 +16,11 @@ body{
     width: 100%;
     color: blanchedalmond;
     background:  #2a3132;
-   /* background:  #5d6e70; */
 }
-/* ------------------------------------------ */
+/* ========================= */
 
 .searchBox{
-    border: 2px solid red;
+    border: 4px solid red;
     padding: 10px;
     margin: 10px;
 }
@@ -30,15 +30,30 @@ body{
 }
 
 .jankariBox{
+    border: 4px solid red;
+    padding: 10px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cityName{
     border: 2px solid red;
     padding: 10px;
     margin: 10px;
+
+    width: 20%;
+    height: 50px;
 }
 
 .mainWeather{
     border: 2px solid red;
     padding: 10px;
     margin: 10px;
+
+    
 }
 
 .okayishData{
