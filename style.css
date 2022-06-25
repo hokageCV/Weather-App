@@ -15,12 +15,14 @@ body{
     font-family:  Arial, sans-serif;
     width: 100%;
     color: blanchedalmond;
-    background:  #2a3132;
+    /* background:  #2a3132; */
+
+    background-color: #F9e399;
+   
 }
 /* ========================= */
 
 .searchBox{
-    border: 4px solid red;
     padding: 10px;
     margin: 10px;
 }
@@ -30,40 +32,43 @@ body{
 }
 
 .jankariBox{
-    border: 4px solid red;
+    border: 4px solid #99aff9;
+    border-radius: 29px;
     padding: 10px;
     margin: 10px;
+
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    color: #191919;
 }
 
-.cityName{
-    border: 2px solid red;
+#cityName{
     padding: 10px;
-    margin: 10px;
+    margin: 40px;
+    font-size: 400%;
+    font-family: 'Times New Roman', Times, serif;
 
-    width: 20%;
     height: 50px;
 }
 
-.mainWeather{
-    border: 2px solid red;
+#mainWeather{
     padding: 10px;
-    margin: 10px;
-
+    margin: 30px;
+    font-size: 250%;
     
 }
 
-.okayishData{
-    border: 2px solid red;
+#okayishData{
     padding: 10px;
     margin: 10px;
+    font-size: 200%;
 }
 
-.fluffData{
-    border: 2px solid red;
+#fluffData{
     padding: 10px;
     margin: 10px;
+    font-size: 150%;
 }
