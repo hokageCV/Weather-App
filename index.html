@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style.css">
-    <script src="./app.js" defer></script>
+    <script type="module" src="./app.js" defer></script>
 
     <title>Weather App</title>
     <link rel="shortcut icon" href="images/reshot-icon-weather.ico" type="image/x-icon">
@@ -15,15 +15,16 @@
 
     <div class="searchBox">
         <form >
-            <input type="text" placeholder="enter city" required>
+            <input type="text" placeholder="enter city" name="city" id="city" required>
             <button>Search</button>
         </form>
     </div>
 
     <div class="jankariBox">
-        <div class="mainWeather"></div>
-        <div class="okayishData"></div>
-        <div class="fluffData"></div>
+        <div id="cityName"></div>
+        <div id="mainWeather"></div>
+        <div id="okayishData"></div>
+        <div id="fluffData"></div>
     </div>
     
 </body>
