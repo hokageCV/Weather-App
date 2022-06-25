@@ -23,16 +23,16 @@ fluffDiv.appendChild(latitude);
 
 
 
-async function renderData(){
-    const data = await dataLao();
+async function renderData(e){
+    const data = await dataLao(e);
 
     cityName.textContent = `${data.shahar}`;
-    weather.textContent = `${data.mausam}`;
-    temperature.textContent = `${data.taapmaan}`;
-    pressure.textContent = `${data.vayuMandalDabav}`;
-    humidity.textContent = `${data.namee}`;
-    longitude.textContent = `${data.longitude}`
-    latitude.textContent = `${data.latitude}`;
+    weather.textContent = `Weather : ${data.mausam}`;
+    temperature.textContent = `Temperature : ${data.taapmaan}`;
+    pressure.textContent = `Pressure : ${data.vayuMandalDabav}`;
+    humidity.textContent = `Humidity : ${data.namee}`;
+    longitude.textContent = `Latitude : ${data.longitude}`;
+    latitude.textContent = `Longitude : ${data.latitude}`;
 
 }
 
