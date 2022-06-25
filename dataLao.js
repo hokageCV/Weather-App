@@ -24,13 +24,13 @@ async function dataLao(e) {
     
     const mausam = response.weather[0].main ;
     const shahar = response.name ;
-    const taapmaan = response.main.temp ;
+    const taapmaan = response.main.temp ; 
     const vayuMandalDabav = response.main.pressure ; 
     const namee = response.main.humidity ;
     const longitude = response.coord.lon ; 
     const latitude = response.coord.lat ; 
 
-    return { mausam, shahar, taapmaan, vayuMandalDabav, longitude, latitude}; 
+    return { mausam, shahar, taapmaan, vayuMandalDabav, namee, longitude, latitude}; 
 }
 
 export { dataLao };
