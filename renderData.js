@@ -38,6 +38,22 @@ async function renderData(e){
     longitude.textContent = `Latitude : ${data.longitude}`;
     latitude.textContent = `Longitude : ${data.latitude}`;
 
+
+    // document.body.style.backgroundImage= `url('https://source.unsplash.com/1080x1070/?weather,sky,"+${data.mausam}+"')`
+
+    // fetch image
+    const response =await fetch(`https://source.unsplash.com/1080x1070/?weather,sky,"+${data.mausam}+"`)
+    const blob = await response.blob()
+    const imgURL =await URL.createObjectURL(blob)
+    document.body.style.backgroundImage = `url(${imgURL})`;
+
+    // Add the 'darken' class to the body to darken it
+    document.body.classList.add('darkenOverlay');
+
+
+    // making container thoda visible
+    const container = document.getElementsByClassName("container")[0]
+    container.classList.add("thodaOverlay")
 }
 
-export {renderData};
+export { renderData };

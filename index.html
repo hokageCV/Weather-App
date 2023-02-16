@@ -8,23 +8,28 @@
     <link rel="stylesheet" href="./style.css">
     <script type="module" src="./app.js" defer></script>
 
-    <title>Weather App</title>
+    <title>Weathercaster</title>
     <link rel="shortcut icon" href="images/reshot-icon-weather.ico" type="image/x-icon">
 </head>
 <body>
 
-    <div class="searchBox">
-        <form >
-            <input type="text" placeholder="enter city" name="city" id="city" required>
-            <button>Search</button>
-        </form>
-    </div>
+    <div class="overlay"></div>
 
-    <div class="jankariBox">
-        <div id="cityName"></div>
-        <div id="mainWeather"></div>
-        <div id="okayishData"></div>
-        <div id="fluffData"></div>
+    <div class="container">
+        <h1>Weathercaster</h1>
+        <div class="searchBox">
+            <form >
+                <input type="text" placeholder="enter city" name="city" id="city" required>
+                <button>Search</button>
+            </form>
+        </div>
+        
+        <div class="jankariBox">
+            <div id="cityName"></div>
+            <div id="mainWeather"></div>
+            <div id="okayishData"></div>
+            <div id="fluffData"></div>
+        </div>
     </div>
     
 </body>
