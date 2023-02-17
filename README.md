@@ -14,6 +14,6 @@ Made using JavaScript and the OpenWeather API
 
 ## How to Use the Weather App
 - Enter the name of the city for which you want to view weather information.
-- Click on the "Get Weather" button.
+- Click on the "Search" button.
 - The app will display the current weather information for the city, including temperature, pressure and humidity.
 ---

@@ -42,7 +42,7 @@ async function renderData(e){
     // document.body.style.backgroundImage= `url('https://source.unsplash.com/1080x1070/?weather,sky,"+${data.mausam}+"')`
 
     // fetch image
-    const response =await fetch(`https://source.unsplash.com/1080x1070/?weather,sky,"+${data.mausam}+"`)
+    const response =await fetch(`https://source.unsplash.com/2400x1566/?weather,sky,"+${data.mausam}+"`)
     const blob = await response.blob()
     const imgURL =await URL.createObjectURL(blob)
     document.body.style.backgroundImage = `url(${imgURL})`;
