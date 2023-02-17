@@ -8,6 +8,7 @@
     --btnBG: #faebb7;
     --btnFocusBG: red;
     --infoText: black;
+    --thodaOverlay: #808080;
 }
 *,
 *::before,
@@ -29,6 +30,7 @@ body{
     transition: background-image 0.1s ease;
 
     background-size: fit;
+    background-position: center;
     background-repeat: no-repeat;
 }
 /* ========================= */
@@ -202,7 +204,7 @@ button:hover{
 }
 
 .thodaOverlay{
-    background-color: #808080;
+    background-color: var(--thodaOverlay);
     opacity: 0.7;
     border-radius: 10px;
     width: max-content;
