@@ -1,7 +1,8 @@
 # Weather App 
 The [Weather App](https://hokagecv.github.io/Weather-App/) is a tool that provides real-time weather information for any city
-
 Made using JavaScript and the OpenWeather API
+
+![Weather App Image](./images/weather_app.png)
 
 ## Features
 - Real-time weather information for any city
